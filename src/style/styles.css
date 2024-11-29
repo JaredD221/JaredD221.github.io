@@ -8,5 +8,6 @@ body {
 }
 .home-page {
     background-color: seaGreen; /* Background color for the home page */
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Align text to the left */
 }
+
