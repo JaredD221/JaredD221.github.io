@@ -2,12 +2,32 @@ body {
     background-color: seaGreen; /* Default background color */
 }
 
-
 .about-page {
     background-color: lightblue; /* Background color for the about page */
+    text-align: center; /* Align text to the left */
 }
+
+.about-page #h2-home {
+    color: black; /* Text color for the about page */
+    text-align: left;
+}
+
+.about-page #jared {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the image round */
+    border: solid 4px black; /* Add a border around the image */
+}
+
+
 .home-page {
     background-color: seaGreen; /* Background color for the home page */
-    text-align: center; /* Align text to the left */
+    text-align: center; /* Align text to the center */
+}
+
+.Bio-container {
+    display: block;
+    text-align: left; /* Align text to the left */
+    max-width: 500px;
 }
 
