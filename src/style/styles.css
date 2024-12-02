@@ -7,12 +7,14 @@ html, body {
 
 .about-page {
     background-color: lightblue; /* Background color for the about page */
-    text-align: center; /* Align text to the left */
+    text-align: center; /* Align text to the center */
+    padding: 20px;
 }
 
-.about-page #h2-home {
-    color: black; /* Text color for the about page */
-    text-align: left;
+#photo {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the image round */
 }
 
 .about-page #jared {
@@ -20,6 +22,29 @@ html, body {
     height: 300px; /* Adjust the height as needed */
     border-radius: 50%; /* Make the image round */
     border: solid 4px black; /* Add a border around the image */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the animation */
+    align-items: left;
+}
+
+.about-page #jared:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.Bio-container {
+    display: block;
+    text-align: left; /* Align text to the left */
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 2px black; /* Add a border around the container */
+    background-color: white; /* Background color for the container */
+}
+
+.about-page #h2-Bio {
+    color: rgb(8, 3, 3); /* Text color for the about page */
+    text-align: left;
+    padding-left: 130px;
 }
 
 .about-page .background-container {
@@ -41,17 +66,27 @@ html, body {
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     text-align: center; /* Align text to the center */
+    position: relative; /* Ensure positioning context for the logo */
 }
 
-.Bio-container {
-    display: block;
-    text-align: left; /* Align text to the left */
-    max-width: 500px;
+.school-logo-button {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the image round */
+    border: solid 4px black; /* Add a border around the image */
+    position: absolute; /* Position the logo absolutely */
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the animation */
+}
+
+.school-logo-button:hover {
+    transform: scale(1.1); /* Scale up the logo on hover */
 }
 
 footer {
-    background-color: rgba(255, 0, 0, 0.4); /* Red background with 80% opacity */
+    background-color: rgba(189, 8, 8, 0.678); /* Slightly transparent background */
     padding: 10px;
     text-align: center;
 }
-
