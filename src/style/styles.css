@@ -5,21 +5,25 @@ html, body {
     flex-direction: column;
 }
 
+/* About Page Styles */
 .about-page {
-    background-color: lightblue; /* Background color for the about page */
+    min-height: 100vh; /* Ensure the element takes up at least the full height of the viewport */
+    background: linear-gradient(to bottom, lightblue, whitesmoke, lightgrey); /* Apply the gradient */
+    background-attachment: fixed; /* Fix the background while scrolling */
     text-align: center; /* Align text to the center */
     padding: 20px;
+    position: relative; /* Ensure positioning context for the Home button */
 }
 
-#photo {
+#photo-link {
     width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
+    height: 140px; /* Adjust the height as needed */
     border-radius: 50%; /* Make the image round */
 }
 
 .about-page #jared {
-    width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
     border-radius: 50%; /* Make the image round */
     border: solid 4px black; /* Add a border around the image */
     cursor: pointer; /* Change cursor to pointer on hover */
@@ -41,10 +45,10 @@ html, body {
     background-color: white; /* Background color for the container */
 }
 
-.about-page #h2-Bio {
-    color: rgb(8, 3, 3); /* Text color for the about page */
+.about-page #h2-me {
+    color: rgb(0, 0, 0); /* Text color for the about page */
     text-align: left;
-    padding-left: 130px;
+    padding-left: 75px;
 }
 
 .about-page .background-container {
@@ -54,8 +58,10 @@ html, body {
     background-size: cover; /* Cover the specified area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
+    border: solid 1px; /* Add a shadow around the container */
 }
 
+/* Home Page Styles */
 .home-page {
     flex: 1;
     display: flex;
@@ -85,8 +91,25 @@ html, body {
     transform: scale(1.1); /* Scale up the logo on hover */
 }
 
-footer {
+/* Footer Styles */
+#home-footer {
     background-color: rgba(189, 8, 8, 0.678); /* Slightly transparent background */
     padding: 10px;
     text-align: center;
+}
+
+/* Home Button Styles */
+#Home-button {
+    position: absolute; /* Position the button absolutely */
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Position the button to the right */
+}
+
+/* Link Styles for About Page */
+.about-page a {
+    color: black; /* Change the link color to black */
+}
+
+.about-page a:hover {
+    color: blue; /* Change the link color on hover */
 }
