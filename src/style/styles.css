@@ -61,6 +61,24 @@ html, body {
     border: solid 1px; /* Add a shadow around the container */
 }
 
+.photo-and-skills {
+    display: flex;
+    align-items: center;
+}
+
+.skills-list {
+    list-style-type: disc; /* Use disc bullets for the list */
+    color: black; /* Ensure the text color is visible */
+    border: 1px solid black; /* Add a border around the list */
+    padding: 20px; /* Add some padding to the list */
+    padding-top: 5px;
+    padding-bottom: 10px; /* Adjust the top padding as needed */
+}
+
+.skills-list li {
+    margin-bottom: 5px; /* Add some space between list items */
+}
+
 /* Home Page Styles */
 .home-page {
     flex: 1;
