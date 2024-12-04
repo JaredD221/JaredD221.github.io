@@ -35,22 +35,34 @@ html, body {
     transform: scale(1.1); /* Scale up the image on hover */
 }
 
+
+/* Bio Container Styles */
 .Bio-container {
     display: block;
     text-align: left; /* Align text to the left */
     max-width: 500px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: solid 2px black; /* Add a border around the container */
+    padding: 0 10px; /* Combine padding-left and padding-right */
+    border: solid 4px black; /* Add a border around the container */
     background-color: white; /* Background color for the container */
 }
 
+/* H2 Me Styles */
 .about-page #h2-me {
     color: rgb(0, 0, 0); /* Text color for the about page */
-    text-align: left;
-    padding-left: 75px;
+    text-align: center;
+    padding-left: 0;
 }
 
+#Morro {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    border: solid 4px black; /* Add a border around the image */
+    position: absolute; /* Position the element absolutely */
+    top: 420px; /* Adjust the top position as needed */
+    right: 40px;
+}
+
+/* Background Container Styles */
 .about-page .background-container {
     width: 100%;
     height: 40vh; /* Adjust the height as needed */
@@ -63,16 +75,20 @@ html, body {
 
 .photo-and-skills {
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.skills-container {
+    margin-top: 0px;
+    border: solid 2px black; /* Add a border around the container */
 }
 
 .skills-list {
     list-style-type: disc; /* Use disc bullets for the list */
     color: black; /* Ensure the text color is visible */
-    border: 1px solid black; /* Add a border around the list */
-    padding: 20px; /* Add some padding to the list */
-    padding-top: 5px;
-    padding-bottom: 10px; /* Adjust the top padding as needed */
+    border-top: 1px solid black; /* Add a border around the list */
+    padding: 5px 20px 10px 20px; /* Add some padding to the list */
 }
 
 .skills-list li {
@@ -93,6 +109,7 @@ html, body {
     position: relative; /* Ensure positioning context for the logo */
 }
 
+/* School Logo Button Styles */
 .school-logo-button {
     width: 100px; /* Adjust the width as needed */
     height: 100px; /* Adjust the height as needed */
@@ -130,4 +147,11 @@ html, body {
 
 .about-page a:hover {
     color: blue; /* Change the link color on hover */
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
 }
