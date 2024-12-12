@@ -49,11 +49,9 @@ html{
     height: auto; /* Set a fixed height if needed, or use auto */
     display: block;
     text-align: left; /* Align text to the left */
-    padding: 0 10px; /* Combine padding-left and padding-right */
+    padding: 0px 12px; /* Combine padding-left and padding-right */
     border: solid 4px black; /* Add a border around the container */
     background-color: white; /* Background color for the container */
-    margin-left: 20px; /* Add some space between the photo and the bio */
-    margin-bottom: 20px; /* Add some space below the bio container */
 }
 
 /* H2 Me Styles */
@@ -70,8 +68,6 @@ html{
     height: 150px; /* Adjust the height as needed */
     border: solid 4px black; /* Add a border around the image */
     border-radius: 50%; /* Make the image round */
-    margin-left: 500px; /* Add space below the image */
-    margin-right: 100px; /* Add some space between the image and the text */
 }
 
 .Morro-container {
@@ -85,10 +81,9 @@ html{
     height: auto; /* Set a fixed height if needed, or use auto */
     display: block;
     text-align: left; /* Align text to the left */
-    padding: 13px; /* Combine padding-left and padding-right */
+    padding: 12px 12px; /* Combine padding-left and padding-right */
     border: solid 4px black; /* Add a border around the container */
     background-color: white; /* Background color for the container */
-    margin: 0px;
 }
 
 .Morro-skills-container {
@@ -206,5 +201,11 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
